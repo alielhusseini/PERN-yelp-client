@@ -1,10 +1,13 @@
 import React from 'react'
 import { render } from 'react-dom'
 import App from './App'
+import MyErrorBoundary from './components/MyErrorBoundary' // for synch errors
+
 
 render(
-  <React.StrictMode>
+
+  <MyErrorBoundary>
     <App />
-  </React.StrictMode>,
+  </MyErrorBoundary>,
   document.getElementById('root')
 )
