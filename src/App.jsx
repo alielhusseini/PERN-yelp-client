@@ -8,11 +8,9 @@ const RestaurantDetail = lazy(() => import('./pages/RestaurantDetail'))
 
 const SuspenseWrapper = ({ children }) => <Suspense fallback={<div>Loading...</div>}>{ children }</Suspense>
 
-
-
 function App() {
   
-  // Error Boundary Example
+  // Error Boundary Example:
   // const name = null
   // const func = () => {
   //   return new Promise((resolve,reject) => {
@@ -23,7 +21,6 @@ function App() {
   // }
   // func()
  
-  
   return (
     <RestaurantProvider>
       <div className="container">

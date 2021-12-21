@@ -5,7 +5,6 @@ import MyErrorBoundary from './components/MyErrorBoundary' // for synch errors
 
 
 render(
-
   <MyErrorBoundary>
     <App />
   </MyErrorBoundary>,
