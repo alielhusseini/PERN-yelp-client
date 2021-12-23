@@ -25,7 +25,7 @@ export default function RestaurantList() {
         e.stopPropagation()
 
         try {
-            const res = await deleteRestaurant(id);
+            await deleteRestaurant(id);
             setRestaurants(restaurants.filter(restaurant => restaurant.res_id !== id ))
         } catch (err) {
             console.log(err)
